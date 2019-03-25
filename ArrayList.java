@@ -1,5 +1,3 @@
-package com.company;
-
 public class ArrayList<E> {
 
     private Object[] elements;  //все элементы, которые хранит лист
@@ -14,6 +12,7 @@ public class ArrayList<E> {
     public ArrayList(int initialCapacity) {
         if (initialCapacity > 0) {
             this.elements = new Object[initialCapacity];
+            capacity = initialCapacity;
         } else if (initialCapacity == 0) {
             this.elements = new Object[capacity];
         } else {
